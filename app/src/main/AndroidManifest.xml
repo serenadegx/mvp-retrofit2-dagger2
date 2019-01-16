@@ -23,6 +23,7 @@
         <activity android:name=".MainActivity">
 
         </activity>
+        <activity android:name=".business.BusinessActivity"/>
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".login2.Login2Activity" />
         <activity android:name=".advance.AdvanceActivity" />

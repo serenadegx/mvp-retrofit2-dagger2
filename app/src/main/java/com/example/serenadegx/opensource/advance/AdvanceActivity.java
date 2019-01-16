@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.serenadegx.opensource.R;
+import com.example.serenadegx.opensource.business.BusinessActivity;
 import com.example.serenadegx.opensource.di.ActivityScoped;
 import com.example.serenadegx.opensource.login2.Login2Result;
 
@@ -73,7 +74,8 @@ public class AdvanceActivity extends DaggerActivity implements AdvanceContract.V
 
     @Override
     public void loginSuccess(Login2Result data) {
-        Toast.makeText(this,data.getMessage(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, data.getMessage(), Toast.LENGTH_SHORT).show();
+        BusinessActivity.start2BusinessActivity(this);
     }
 
 
@@ -85,6 +87,7 @@ public class AdvanceActivity extends DaggerActivity implements AdvanceContract.V
     @Override
     public void loginError(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        BusinessActivity.start2BusinessActivity(this);
     }
 
     public static void start2AdvanceActivity(Context context) {

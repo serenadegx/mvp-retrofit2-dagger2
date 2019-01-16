@@ -2,6 +2,8 @@ package com.example.serenadegx.opensource.di;
 
 import com.example.serenadegx.opensource.advance.AdvanceActivity;
 import com.example.serenadegx.opensource.advance.AdvanceModule;
+import com.example.serenadegx.opensource.business.BusinessActivity;
+import com.example.serenadegx.opensource.business.BusinessModule;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
@@ -17,5 +19,9 @@ public abstract class ActivityBindingView {
     @ActivityScoped
     @ContributesAndroidInjector(modules = AdvanceModule.class)
     abstract AdvanceActivity advanceActivity();
+
+    @ActivityScoped
+    @ContributesAndroidInjector(modules = BusinessModule.class)
+    abstract BusinessActivity businessActivity();
 
 }

@@ -8,7 +8,7 @@ import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
 /**
- * 这是一个Dagger Module。我们使用它将视图依赖项传递给* {@link AdvancePresenter}。
+ * 这是一个Dagger Module。我们使用它将视图依赖项传递给 {@link AdvancePresenter}。
  */
 @Module
 public abstract class AdvanceModule {
