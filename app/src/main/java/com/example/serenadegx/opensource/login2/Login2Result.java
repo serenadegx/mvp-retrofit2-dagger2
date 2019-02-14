@@ -5,6 +5,11 @@ public class Login2Result {
     private String message;
     private DataBean data;
 
+    public Login2Result(String code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+
     public void setCode(String code) {
         this.code = code;
     }

@@ -32,8 +32,8 @@ public class AdvanceActivity extends DaggerActivity implements AdvanceContract.V
         TextInputLayout tilPwd = findViewById(R.id.til_pwd);
         final TextInputEditText etPhone = findViewById(R.id.et_phone);
         final TextInputEditText etPwd = findViewById(R.id.et_pwd);
-        etPhone.setText("13356892296");
-        etPwd.setText("a123456");
+        etPhone.setText("");
+        etPwd.setText("");
         Button btSure = findViewById(R.id.bt_sure);
 
         btSure.setOnClickListener(new View.OnClickListener() {
@@ -46,8 +46,8 @@ public class AdvanceActivity extends DaggerActivity implements AdvanceContract.V
 
     @Override
     protected void onResume() {
-        presenter.takeView(this);
         super.onResume();
+        presenter.takeView(this);
 
     }
 
@@ -69,7 +69,8 @@ public class AdvanceActivity extends DaggerActivity implements AdvanceContract.V
 
     @Override
     public void netWorkError() {
-
+        Toast.makeText(this, "网络出错", Toast.LENGTH_SHORT).show();
+        BusinessActivity.start2BusinessActivity(this);
     }
 
     @Override

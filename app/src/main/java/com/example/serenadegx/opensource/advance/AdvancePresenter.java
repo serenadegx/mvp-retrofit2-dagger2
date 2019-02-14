@@ -36,7 +36,7 @@ public class AdvancePresenter implements AdvanceContract.Presenter {
 
     @Override
     public void login(String account, String pwd) {
-        Log.i("Mango", "login--retrofit:" + mRetrofit);
+//        Log.i("Mango", "login--retrofit:" + mRetrofit);
         Login2Service loginService = mRetrofit.create(Login2Service.class);
         LoginParams loginParams = new LoginParams(account, pwd);
         Log.i("Mango", "loginParams:" + new Gson().toJson(loginParams, LoginParams.class));

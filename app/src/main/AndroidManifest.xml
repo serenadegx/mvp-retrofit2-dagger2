@@ -27,6 +27,7 @@
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".login2.Login2Activity" />
         <activity android:name=".advance.AdvanceActivity" />
+        <activity android:name=".web.WebActivity"/>
     </application>
 
 </manifest>
