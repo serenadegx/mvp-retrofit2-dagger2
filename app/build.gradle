@@ -36,6 +36,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-web:3.0.2'
     androidTestImplementation 'com.android.support.test.espresso.idling:idling-concurrent:3.0.2'
     implementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'
+    // Ui Automator Testing
+    androidTestImplementation 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
     // Dagger dependencies
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
     implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
